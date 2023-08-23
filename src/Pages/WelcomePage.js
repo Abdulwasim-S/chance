@@ -19,7 +19,7 @@ const WelcomePage = () => {
       </p>
       <h1 className="banner mb-3">Hard work + Smart work = Success</h1>
       <div className="mb-3">
-        <NavLink to="/test" className="btn-login mx-2 px-5">
+        <NavLink to="/login" className="btn-login mx-2 px-5">
           LogIn
         </NavLink>
         <NavLink to="/signup" className="btn-signup mx-2 px-5">
