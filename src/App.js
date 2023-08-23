@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import WelcomePage from './Pages/WelcomePage';
+import { Route, Routes } from 'react-router-dom';
+import RouteTestPage from './Pages/RouteTestPage';
+import FooterPage from './Pages/FooterPage';
+import SignUpPage from './Pages/SignUpPage/SignUpPage';
+import HeaderPage from './Pages/HeaderPage';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import ForgetPassword from './Pages/ForgetPassword.js/ForgetPassword';
+import CheckMailPage from './Pages/ForgetPassword.js/CheckMailPage';
+import ResetPasswordPage from './Pages/ForgetPassword.js/ResetPasswordPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <HeaderPage/>
+      <Routes>
+        <Route exact path='/' element={<WelcomePage/>}/>
+        <Route path='/test' element={<RouteTestPage/>}/>
+        <Route path='/signup' element={<SignUpPage/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/forget-password' element={<ForgetPassword/>}/>
+        <Route path='/mail' element={<CheckMailPage/>}/>
+        <Route path='/reset-password' element={<ResetPasswordPage/>}/>
+      </Routes>
+      <FooterPage/>
     </div>
   );
 }

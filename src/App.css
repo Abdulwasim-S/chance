@@ -1,38 +1,46 @@
-.App {
+.App{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Header Page Style*/
+.headerpage{
+  background-color: #593d88;
+  color: #ba8fff;
+  text-align: left;
+  padding: 10px;
+  padding-left: 5%;
+  border-bottom: 2px #ba8fff solid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Welcome Page Style*/
+.motive{
+  color: white;
+  background-color: #593d88;
+  padding: 2%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner{
+  color: #ba8fff;
+  padding: 5%;
+}
+.vl {
+  padding: 5px 0px 5px 0px;
+  border-left: 2px solid rgba(128, 0, 128, 0.3);
+  height: 60px;
+}
+.btn-login{
+  background-color: #593d88;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-signup{
+  background-color: #593d88;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  padding: 10vh 0;
+  background-color: #593d88;
+  color: white;
 }
