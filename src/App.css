@@ -53,6 +53,10 @@
   text-decoration: none;
   border-radius: 5px;
 }
+.jobs-row{
+  background-color: #ba8fff;
+  border-radius: 5px;
+}
 .footer{
   padding: 10vh 0;
   background-color: #593d88;
