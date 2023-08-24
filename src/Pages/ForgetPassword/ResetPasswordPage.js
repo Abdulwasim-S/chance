@@ -70,12 +70,12 @@ const ResetPasswordPage = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder="confirm password"
-        />
+        /><br/>
+        <span className="text-danger">{state}</span>
         <br />
         <button type="submit" className="btn-signup mb-3" >
           Reset Password
-        </button><br/>
-        <span className="text-danger">{state}</span>
+        </button>
       </form>
     </div>
   );

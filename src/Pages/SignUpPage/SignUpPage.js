@@ -91,13 +91,13 @@ const SignUpPage = () => {
           placeholder="password"
         />
         <br />
+        <span className="text-danger">{state}</span><br/>
         <button type="submit" className="btn-signup mb-3" >
           Create Account
         </button><br/>
         <small className="mb-3">
             Already have an account - <NavLink to={'/login'}>Login</NavLink>
         </small>
-        <span className="text-danger">{state}</span>
       </form>
     </div>
   );

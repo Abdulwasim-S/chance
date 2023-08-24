@@ -58,13 +58,13 @@ const ForgetPassword = () => {
           placeholder="email"
         />
         <br />
+        <span className="text-danger">{state}</span><br/>
         <button type="submit" className="btn-signup mb-3" >
           Next
         </button><br/>
         <small className="mb-3">
             I dont't have an account - <NavLink to={'/signup'}>SignUp</NavLink>
-        </small><br/>
-        <span className="text-danger">{state}</span>
+        </small>
       </form>
     </div>
   );
