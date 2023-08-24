@@ -70,6 +70,7 @@ const LoginPage = () => {
           placeholder="password"
         />
         <br />
+        <span className="text-danger">{state}</span><br/>
         <button type="submit" className="btn-signup mb-3" >
           Login
         </button><br/>
@@ -79,7 +80,6 @@ const LoginPage = () => {
         <small className="mb-3">
             Forget Password - <NavLink to={'/forget-password'}>Click Here</NavLink>
         </small>
-        <span className="text-danger">{state}</span>
       </form>
     </div>
   );
