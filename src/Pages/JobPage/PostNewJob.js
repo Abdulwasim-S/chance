@@ -26,6 +26,7 @@ const PostNewJob = () => {
     validationSchema:fieldValidationSchema,
     onSubmit:async (jobInfo)=>{
         try{
+            setState("please wait...")
             const response = await fetch(
                 "https://chance-backend.vercel.app/post-job",
                 {
@@ -114,12 +115,12 @@ const PostNewJob = () => {
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder="Experience"
-        />
+        /><br/>
+        <span className="text-danger">{state}</span>
         <br />
         <button type="submit" className="btn-signup mb-3" >
           Post New Job
-        </button><br/>
-        <span className="text-danger">{state}</span>
+        </button>
       </form>
     </div>
   );
