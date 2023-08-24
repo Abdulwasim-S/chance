@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const JobPage = () => {
   const [datas, setData] = useState([]);
+  const navTo = useNavigate();
   useEffect(() => {
     try {
       async function getData() {
@@ -34,7 +35,9 @@ const JobPage = () => {
       }
     }
   }
-  const application=(email,role)=>{
+  const application=(email)=>{
+    localStorage.setItem("chance-application-mail",email);
+    navTo("/apply");
 
   }
   return (
@@ -66,7 +69,7 @@ const JobPage = () => {
                   <p class="card-text">Qualification : {ele.qualification}</p>
                   <p class="card-text">Experience : {ele.experience}</p>
                   <p class="card-text">MM/DD/YY : {ele.date}</p>
-                  <button className="btn-signup" onClick={()=>{}}>Apply</button>
+                  <button className="btn-signup" onClick={()=>application(ele.email)}>Apply</button>
                 </div>
               </div>
             </div>

@@ -12,6 +12,7 @@ import CheckMailPage from './Pages/ForgetPassword/CheckMailPage';
 import ResetPasswordPage from './Pages/ForgetPassword/ResetPasswordPage';
 import JobPage from './Pages/JobPage/JobPage';
 import PostNewJob from './Pages/JobPage/PostNewJob';
+import JobApplicationPage from './Pages/JobPage/JobApplicationPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/resetpassword' element={<ResetPasswordPage/>}/>
         <Route path='/jobs' element={<JobPage/>}/>
         <Route path='/post-new-job' element={<PostNewJob/>}/>
+        <Route path='/apply' element={<JobApplicationPage/>}/>
       </Routes>
       <FooterPage/>
     </div>
