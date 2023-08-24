@@ -19,6 +19,7 @@ const JobApplicationPage = () => {
     onSubmit:async (applicationInfo)=>{
         try{
             console.log(localStorage["chance-application-mail"])
+            console.log(localStorage)
             const response = await fetch(
                 "https://chance-backend.vercel.app/send-mail",
                 {
@@ -26,7 +27,8 @@ const JobApplicationPage = () => {
                   body: JSON.stringify(applicationInfo),
                   headers: {
                     "Content-Type": "application/json",
-                    "chance-application-mail":localStorage["chance-application-mail"]
+                    "chance-application-mail":localStorage["chance-application-mail"],
+                    "x-auth-token":localStorage["chance-token"]
                   },
                 }
               );
