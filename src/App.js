@@ -7,9 +7,10 @@ import FooterPage from './Pages/FooterPage';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
 import HeaderPage from './Pages/HeaderPage';
 import LoginPage from './Pages/LoginPage/LoginPage';
-import ForgetPassword from './Pages/ForgetPassword.js/ForgetPassword';
-import CheckMailPage from './Pages/ForgetPassword.js/CheckMailPage';
-import ResetPasswordPage from './Pages/ForgetPassword.js/ResetPasswordPage';
+import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
+import CheckMailPage from './Pages/ForgetPassword/CheckMailPage';
+import ResetPasswordPage from './Pages/ForgetPassword/ResetPasswordPage';
+import JobPage from './Pages/JobPage/JobPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/forget-password' element={<ForgetPassword/>}/>
         <Route path='/mail' element={<CheckMailPage/>}/>
         <Route path='/resetpassword' element={<ResetPasswordPage/>}/>
+        <Route path='/jobs' element={<JobPage/>}/>
       </Routes>
       <FooterPage/>
     </div>

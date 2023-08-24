@@ -6,4 +6,4 @@ const RouteTestPage = () => {
   )
 }
 
-export default RouteTestPage
+export default RouteTestPage;

@@ -39,7 +39,7 @@ const ResetPasswordPage = () => {
                 setState(data.message);
                 localStorage.setItem("chance-token", data.token);
                 localStorage.setItem("chance-email", data.email);
-                navTo('/');
+                navTo('/login');
               }
         }
         catch(error){
@@ -80,4 +80,4 @@ const ResetPasswordPage = () => {
   );
 }
 
-export default ResetPasswordPage
+export default ResetPasswordPage;
