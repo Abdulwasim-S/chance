@@ -1,8 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const JobPage = () => {
   return (
-    <div>JobPage</div>
+    <div>
+        <NavLink className='btn-post-job' to={'/post-new-job'}>Post New Job</NavLink>
+    </div>
   )
 }
 

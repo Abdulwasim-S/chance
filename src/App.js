@@ -11,6 +11,7 @@ import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
 import CheckMailPage from './Pages/ForgetPassword/CheckMailPage';
 import ResetPasswordPage from './Pages/ForgetPassword/ResetPasswordPage';
 import JobPage from './Pages/JobPage/JobPage';
+import PostNewJob from './Pages/JobPage/PostNewJob';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/mail' element={<CheckMailPage/>}/>
         <Route path='/resetpassword' element={<ResetPasswordPage/>}/>
         <Route path='/jobs' element={<JobPage/>}/>
+        <Route path='/post-new-job' element={<PostNewJob/>}/>
       </Routes>
       <FooterPage/>
     </div>
