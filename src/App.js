@@ -22,7 +22,7 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/forget-password' element={<ForgetPassword/>}/>
         <Route path='/mail' element={<CheckMailPage/>}/>
-        <Route path='/reset-password' element={<ResetPasswordPage/>}/>
+        <Route path='/resetpassword' element={<ResetPasswordPage/>}/>
       </Routes>
       <FooterPage/>
     </div>
