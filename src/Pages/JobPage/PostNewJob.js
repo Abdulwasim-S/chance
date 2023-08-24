@@ -2,7 +2,7 @@ import React from 'react'
 
 const PostNewJob = () => {
   return (
-    <div>PostNewJob</div>
+    <div>hii aaya page ipo work aagutha paru</div>
   )
 }
 
