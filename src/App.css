@@ -46,6 +46,13 @@
   text-decoration: none;
   color: white;
 }
+.searchbar{
+  margin: 0 10%;
+  border: 2px solid #593d88;
+  height: 100%;
+  padding: 1%;
+  text-decoration: none;
+}
 .footer{
   padding: 10vh 0;
   background-color: #593d88;
