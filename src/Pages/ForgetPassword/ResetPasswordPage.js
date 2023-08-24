@@ -18,6 +18,7 @@ const ResetPasswordPage = () => {
     validationSchema:fieldValidationSchema,
     onSubmit:async (passwordInfo)=>{
         try{
+          setState("Please wait...")
             const response = await fetch(
                 "https://chance-backend.vercel.app/resetpassword",
                 {

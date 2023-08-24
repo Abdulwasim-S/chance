@@ -18,6 +18,7 @@ const LoginPage = () => {
     validationSchema:fieldValidationSchema,
     onSubmit:async (logInInfo)=>{
         try{
+          setState("Please wait...")
             const response = await fetch(
                 "https://chance-backend.vercel.app/login",
                 {

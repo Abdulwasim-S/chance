@@ -39,7 +39,6 @@ const PostNewJob = () => {
                 }
               );
               const data = await response.json();
-              console.log(data)
               if(data.message !== "Job posted"){
                 setState(data.message);
               }

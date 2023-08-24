@@ -18,8 +18,7 @@ const JobApplicationPage = () => {
     validationSchema:fieldValidationSchema,
     onSubmit:async (applicationInfo)=>{
         try{
-            console.log(localStorage["chance-application-mail"])
-            console.log(localStorage)
+            setState("Please wait...")
             const response = await fetch(
                 "https://chance-backend.vercel.app/send-mail",
                 {

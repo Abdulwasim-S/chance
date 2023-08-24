@@ -16,6 +16,7 @@ const ForgetPassword = () => {
     validationSchema:fieldValidationSchema,
     onSubmit:async (info)=>{
         try{
+          setState("Please wait...")
             const response = await fetch(
                 "https://chance-backend.vercel.app/forgetpassword",
                 {
