@@ -48,7 +48,7 @@ const JobApplicationPage = () => {
   })
   return (
     <div>
-      <h1 className="Login-heading m-3">LogIn</h1>
+      <h1 className="Login-heading m-3">Application</h1>
       <form className="px-5 mb-5" onSubmit={handleSubmit}>
         <input
           className={`form-control ${touched.email && errors.email ? "border-danger border-2" : ""}`}
